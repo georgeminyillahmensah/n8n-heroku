@@ -1,0 +1,16 @@
+name: n8n.io
+description: n8n helps you to interconnect every app with an API.
+logo: https://microtica.s3.eu-central-1.amazonaws.com/assets/templates/logos/n8n.png
+repo: https://github.com/microtica/templates/tree/master/n8n
+
+service:
+  n8n:
+    source: git
+    containerPort: 5678
+    autoScaling:
+      minReplicas: 1
+      maxReplicas: 1
+      cpu: 10
+      maxCpu: 50
+      memory: 128
+      maxMemory: 256
